@@ -1,0 +1,5 @@
+<launch>
+   <node name="phoebe_planning" pkg="phoebe_planning" type="phoebe_planning" output="screen">
+      <rosparam command="load" file="$(find phoebe_moveit_config)/config/ompl_planning.yaml"/>
+   </node>
+</launch>

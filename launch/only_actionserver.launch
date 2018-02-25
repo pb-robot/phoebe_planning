@@ -1,0 +1,3 @@
+<launch>
+   <node name="phoebe_dynamixel_actionserver" pkg="phoebe_moveit_config" type="dynamixel_actionserver" output="screen"/>
+</launch>

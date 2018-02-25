@@ -1,0 +1,7 @@
+<launch>
+   <include file="$(find phoebe)/launch/manager.launch" />
+   <include file="$(find phoebe)/launch/controllers.launch" />
+   <include file="$(find phoebe)/launch/state_publisher.launch" />
+
+   <node name="phoebe_dynamixel_pos_relay" pkg="phoebe" type="dynamixel_pos_relay" output="screen"/>
+</launch>
