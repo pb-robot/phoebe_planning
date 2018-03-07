@@ -11,7 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
   cmake_modules
   tf
   phoebe_planning_msgs
-  moveit_pipeline_wrapper
 )
 
 #find_package(cmake_modules REQUIRED)
@@ -115,7 +114,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 # )
 
 ## Declare a cpp executable
-add_executable(phoebe_planning src/phoebe_planning.cpp ${moveit_pipeline_wrapper_RESOURCE_DIR}/src/moveit_pipeline_wrapper.cpp src/planner_interface.cpp)
+add_executable(phoebe_planning src/phoebe_planning.cpp src/moveit_pipeline_wrapper.cpp src/planner_interface.cpp)
 
 add_executable(phoebe_planning_client src/planning_client.cpp)
 
