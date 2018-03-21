@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   cmake_modules
   tf
   phoebe_planning_msgs
+  dynamixel_msgs
 )
 
 #find_package(cmake_modules REQUIRED)
